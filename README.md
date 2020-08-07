@@ -4,3 +4,33 @@ BlueGranite Blogging Bot using the OpenAI GPT-2 Model
 <h3 align="right"><img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/bg_logo.png" width="200px" alt="BlueGranite, Inc."></h3>
 
 <h3 align="right">Thomas J. Weinandy, Steve Krause, Colby T. Ford</h3>
+
+## Purpose
+To showcase the power and utility of generative AI models, specifically in technical writing. Also, to show the inherent bias that comes with imbalanced training of such models.
+
+## Getting Started
+
+Navigate to the _gpt-2_ folder from the command line and run `docker build` command:
+```
+docker build --tag gpt-2 -f Dockerfile.cpu .
+```
+
+Once the image is finished being built, run the image:
+```
+docker run --name gpt-2 -d gpt-2
+```
+
+To get into the command line of the container, run:
+```
+docker exec -it gpt-2 /bin/bash
+```
+
+Copy the corpus of BlueGranite blogs to the container
+```
+docker cp ../scraper/BlueGranite_BlogBodies.txt gpt-2:./gpt-2/
+```
+
+Tune the existing GPT-2 model on the corpus of BlueGranite blogs
+```
+PYTHONPATH=src ./train.py --dataset BlueGranite_BlogBodies.txt --model_name 124M
+```

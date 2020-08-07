@@ -1,3 +1,10 @@
+############################
+## R Script to Scrape All ##
+## BlueGranite Blog Posts ##
+## ---------------------- ##
+##   By: Colby T. Ford    ##
+############################
+
 library(rvest)
 library(dplyr)
 library(stringr)
@@ -33,4 +40,6 @@ for (i in 1:nrow(bloglinks)){
   blogbodies <- c(blogbodies, blogbody)
 }
 
-write.table(blogbodies, "BlueGranite_BlogBodies.txt")
+write.table(blogbodies, "BlueGranite_BlogBodies.txt",
+            quote = FALSE, row.names = FALSE, col.names = FALSE,
+            fileEncoding = "UTF-8")
