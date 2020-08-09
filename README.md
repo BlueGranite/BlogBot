@@ -35,6 +35,9 @@ Tune the existing GPT-2 model on the corpus of BlueGranite blogs
 PYTHONPATH=src ./train.py --dataset BlueGranite_BlogBodies.txt --model_name 124M
 ```
 
+Have the model provide writing samples
 ```
 PYTHONPATH=src src/interactive_conditional_samples.py --model_name 124M --seed 1337 --nsamples 1 --top_k 40 --temperature 0.7
 ```
+
+Then, type the desired prompt into the command line.
