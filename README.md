@@ -1,4 +1,5 @@
 # BlueGranite BlogBot
+
 BlueGranite Blogging Bot using the OpenAI GPT-2 Model
 
 <h3 align="right"><img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/bg_logo.png" width="200px" alt="BlueGranite, Inc."></h3>
@@ -6,10 +7,11 @@ BlueGranite Blogging Bot using the OpenAI GPT-2 Model
 <h3 align="right">Thomas J. Weinandy, Steve Krause, Colby T. Ford</h3>
 
 ## Purpose
+
+<p align="right"><img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/BlogBot.png" width="200px" alt=""></p>
 To showcase the power and utility of generative AI models, specifically in technical writing. Also, to show the inherent bias that comes with imbalanced training of such models.
 
 
-<h3 align="right"><img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/BlogBot.png" width="200px" alt=""></h3>
 
 ## Getting Started
 
