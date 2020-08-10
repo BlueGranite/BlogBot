@@ -44,3 +44,7 @@ PYTHONPATH=src src/interactive_conditional_samples.py --model_name 124M --seed 1
 ```
 
 Then, type the desired prompt into the command line.
+
+
+## Source
+GPT-2 was created by [OpenAI](https://openai.com/blog/better-language-models/). Model tuning code was referenced from [github.com/nshepperd/gpt-2](https://github.com/nshepperd/gpt-2)
