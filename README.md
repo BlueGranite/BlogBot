@@ -4,11 +4,13 @@ BlueGranite Blogging Bot using the OpenAI GPT-2 Model
 
 <h3 align="right"><img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/bg_logo.png" width="200px" alt="BlueGranite, Inc."></h3>
 
-<h3 align="right">Thomas J. Weinandy, Steve Krause, Colby T. Ford</h3>
+<h3 align="right">Colby T. Ford and Thomas J. Weinandy</h3>
 
 ## Purpose
 
-To showcase the power and utility of generative AI models, specifically in technical writing. Also, to show the inherent bias that comes with imbalanced training of such models.
+To showcase the power and utility of generative AI models, specifically in technical writing. Also, we aim to show the inherent bias that comes with imbalanced training of such models.
+
+This repository hosts the companion code our blog post: [A BlueGranite Blog Post Written (Mostly) by AI](https://www.blue-granite.com/blog/a-bluegranite-blog-post-written-mostly-by-ai)
 
 <img src="https://raw.githubusercontent.com/BlueGranite/BlogBot/master/img/BlogBot.png" width="200px" alt="">
 
@@ -45,6 +47,12 @@ PYTHONPATH=src src/interactive_conditional_samples.py --model_name 124M --seed 1
 ```
 
 Then, type the desired prompt into the command line.
+
+Once you're finished, you can copy data from the container using:
+```
+docker cp gpt-2:./gpt-2/checkpoint ./checkpoint
+docker cp gpt-2:./gpt-2/samples ./samples
+```
 
 
 ## Source
