@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 scraper/.Rhistory
+checkpoint/run1/model-24000.data-00000-of-00001
